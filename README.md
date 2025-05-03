@@ -11,8 +11,9 @@ The exact features to be collected can also be modified, but the default variabl
       "YEAR", "MONTH", "OP_UNIQUE_CARRIER", "ORIGIN_AIRPORT_SEQ_ID", "ORIGIN_CITY_MARKET_ID",
       "ORIGIN_CITY_NAME", "ORIGIN_STATE_ABR", "DEST_AIRPORT_SEQ_ID", "DEST_CITY_MARKET_ID",
       "DEST_CITY_NAME", "DEST_STATE_ABR", "DEP_DELAY", "ARR_DELAY", "CANCELLED", "CANCELLATION_CODE",
-      "DIVERTED", "CARRIER_DELAY", "WEATHER_DELAY", "NAS_DELAY", "SECURITY_DELAY", "LATE_AIRCRAFT_DELAY"
+      "DIVERTED", "CARRIER_DELAY", "WEATHER_DELAY", "NAS_DELAY", "SECURITY_DELAY", "LATE_AIRCRAFT_DELAY" <br />
 
+Warning: With this amount of default features, each data file was ~50 MB. Please be conscious of your system memory and RAM capacity when using scraper.ipynb to download data files.
 
 ## Data analysis:
 delay_prediction.ipynb is the notebook used for exploratory data analysis and ML modeling. <br />
@@ -22,4 +23,5 @@ Each division was also broken down into contributions by five delay factors as r
 weather delay, National Airspace System (NAS) delay, and security delay. <br />
 
 The ML models used in the notebook include linear regression, logistic regression, Naive Bayes, and Decision Trees. All models come from the 
-sci-kit learn/sklearn libraries.
+sci-kit learn/sklearn libraries. Again, note that the data files are quite large for an average laptop. It is recommended to use machines with >16 GB of RAM when running these
+models for >1 year worth of data.
