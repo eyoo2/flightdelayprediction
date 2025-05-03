@@ -1,3 +1,6 @@
+## About this project:
+This project aims to find a supervised regression and or classification model that best predicts domestic flight delays at U.S. airports based on data from the past 15 years. Put simply, the main question for this project is the following: What factors contribute to flight delays? Identifying factors, both controllable and uncontrollable, can inform passengers of best ways to prepare for and predict flight delays. This knowledge can also help airlines mitigate flight delays to save money and stress.
+
 ## Data collection:
 scraper.ipynb is a script created to automate data collection for this project. Data is collected from the Bureau of Transportation Statistics 
 (“Reporting Carrier On-Time Performance (1987-present)”) by running a headless browser using Selenium webdriver. <br />
